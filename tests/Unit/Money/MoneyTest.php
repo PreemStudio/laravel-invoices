@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Money;
 
-use Money\Currency;
 use BombenProdukt\Invoices\Money\Money;
+use Money\Currency;
 use function Spatie\Snapshots\assertMatchesSnapshot;
 
 it('formats money correctly without specifying a locale', function (): void {

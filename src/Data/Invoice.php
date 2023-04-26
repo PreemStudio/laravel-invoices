@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Invoices\Data;
 
-use Carbon\CarbonImmutable;
 use BombenProdukt\Invoices\Contracts\Discount;
 use BombenProdukt\Invoices\Data\Concerns\SumsMoney;
 use BombenProdukt\Invoices\Money\Money;
+use Carbon\CarbonImmutable;
 
 final class Invoice extends AbstractData
 {

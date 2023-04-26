@@ -4,10 +4,10 @@ declare(strict_types=1);
 
 namespace Tests\Unit\Data;
 
-use Carbon\CarbonImmutable;
 use BombenProdukt\Invoices\Data\Invoice;
 use BombenProdukt\Invoices\Discounts\AmountDiscount;
 use BombenProdukt\Invoices\Discounts\PercentageDiscount;
+use Carbon\CarbonImmutable;
 
 it('can calculate the subtotal, tax and total', function (bool $inclusive, string $subtotal, string $tax, string $total): void {
     $invoice = Invoice::make(

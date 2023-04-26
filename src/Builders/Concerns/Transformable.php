@@ -6,10 +6,10 @@ namespace BombenProdukt\Invoices\Builders\Concerns;
 
 use Barryvdh\DomPDF\Facade\Pdf;
 use Barryvdh\DomPDF\PDF as Document;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\View;
 use BombenProdukt\Invoices\Builders\InvoiceBuilder;
 use BombenProdukt\Invoices\Data\Invoice;
+use Illuminate\Http\Response;
+use Illuminate\Support\Facades\View;
 
 /** @mixin InvoiceBuilder */
 trait Transformable

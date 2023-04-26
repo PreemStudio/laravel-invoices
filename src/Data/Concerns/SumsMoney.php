@@ -4,8 +4,8 @@ declare(strict_types=1);
 
 namespace BombenProdukt\Invoices\Data\Concerns;
 
-use Closure;
 use BombenProdukt\Invoices\Money\Money;
+use Closure;
 
 trait SumsMoney
 {

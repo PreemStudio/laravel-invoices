@@ -5,11 +5,11 @@ declare(strict_types=1);
 namespace Tests\Unit\Builders\Concerns;
 
 use Barryvdh\DomPDF\PDF;
-use Illuminate\Http\Response;
 use BombenProdukt\Invoices\Builders\InvoiceBuilder;
 use BombenProdukt\Invoices\Data\Invoice;
 use BombenProdukt\Invoices\Discounts\AmountDiscount;
 use BombenProdukt\Invoices\Discounts\PercentageDiscount;
+use Illuminate\Http\Response;
 use function Spatie\Snapshots\assertMatchesHtmlSnapshot;
 
 it('builds an invoice from the data', function (): void {
