@@ -14,7 +14,7 @@
             "role": "Developer"
         }
     ],
-    "homepage": "https://github.com/BombenProdukt/laravel-invoices",
+    "homepage": "https://github.com/faustbrian/laravel-invoices",
     "require": {
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "^2.0",
