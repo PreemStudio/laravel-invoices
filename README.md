@@ -4,20 +4,6 @@
     </a>
 </p>
 
-<p align="center">
-    <a href="https://github.com/faustbrian/laravel-invoices/actions">
-        <img src="https://badge.sh/github/check-runs/BombenProdukt/laravel-invoices" alt="Checks" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-invoices">
-        <img src="https://badge.sh/packagist/downloads/BombenProdukt/laravel-invoices" alt="Downloads" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-invoices">
-        <img src="https://badge.sh/packagist/version/BombenProdukt/laravel-invoices" alt="Version" />
-    </a>
-    <a href="https://packagist.org/packages/bombenprodukt/laravel-invoices">
-        <img src="https://badge.sh/packagist/license/BombenProdukt/laravel-invoices" alt="License" />
-    </a>
-</p>
 
 ## About laravel-invoices
 
