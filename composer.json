@@ -18,7 +18,7 @@
     "require": {
         "php": "^8.2",
         "barryvdh/laravel-dompdf": "^2.0",
-        "commerceguys/addressing": "^1.4",
+        "commerceguys/addressing": "^2.0",
         "illuminate/contracts": "^10.0",
         "moneyphp/money": "^4.1",
         "bombenprodukt/laravel-package-powerpack": "^1.0",
