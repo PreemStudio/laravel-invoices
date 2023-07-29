@@ -6,6 +6,11 @@ parameters:
 			path: src/Builders/InvoiceBuilder.php
 
 		-
+			message: "#^Only booleans are allowed in an if condition, mixed given\\.$#"
+			count: 1
+			path: src/Builders/InvoiceBuilder.php
+
+		-
 			message: "#^Parameter \\#1 \\$size of method Dompdf\\\\Dompdf\\:\\:setPaper\\(\\) expects array\\<float\\>\\|string, mixed given\\.$#"
 			count: 1
 			path: src/Builders/InvoiceBuilder.php
@@ -66,6 +71,21 @@ parameters:
 			path: src/Builders/InvoiceBuilder.php
 
 		-
+			message: "#^Only booleans are allowed in an if condition, string given\\.$#"
+			count: 4
+			path: src/Data/Address.php
+
+		-
+			message: "#^Only booleans are allowed in an if condition, string\\|null given\\.$#"
+			count: 3
+			path: src/Data/Address.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/Invoice.php
+
+		-
 			message: "#^Strict comparison using \\=\\=\\= between null and BombenProdukt\\\\Invoices\\\\Money\\\\Money will always evaluate to false\\.$#"
 			count: 1
 			path: src/Data/Invoice.php
@@ -76,9 +96,19 @@ parameters:
 			path: src/Data/InvoiceItem.php
 
 		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Data/InvoiceItem.php
+
+		-
 			message: "#^Strict comparison using \\=\\=\\= between null and BombenProdukt\\\\Invoices\\\\Money\\\\Money will always evaluate to false\\.$#"
 			count: 1
 			path: src/Data/InvoiceItem.php
+
+		-
+			message: "#^Construct empty\\(\\) is not allowed\\. Use more strict comparison\\.$#"
+			count: 1
+			path: src/Money/Money.php
 
 		-
 			message: "#^Parameter \\#1 \\$code of class Money\\\\Currency constructor expects non\\-empty\\-string, mixed given\\.$#"
