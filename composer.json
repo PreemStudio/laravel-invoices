@@ -17,7 +17,7 @@
     "homepage": "https://github.com/faustbrian/laravel-invoices",
     "require": {
         "php": "^8.2",
-        "barryvdh/laravel-dompdf": "^2.0",
+        "barryvdh/laravel-dompdf": "^3.0",
         "commerceguys/addressing": "^2.0",
         "illuminate/contracts": "^10.0",
         "moneyphp/money": "^4.1",
