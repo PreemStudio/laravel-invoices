@@ -1,0 +1,70 @@
+{
+    "name": "basecodeoy/laravel-invoices",
+    "description": "A package to build and manage invoices with Laravel.",
+    "license": "MIT",
+    "keywords": [
+        "BaseCode Oy",
+        "laravel",
+        "laravel-invoices"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "hello@basecode.sh",
+            "role": "Developer"
+        }
+    ],
+    "homepage": "https://github.com/basecodeoy/laravel-invoices",
+    "require": {
+        "php": "^8.3",
+        "barryvdh/laravel-dompdf": "^2.2",
+        "basecodeoy/laravel-package-powerpack": "^1.0.0",
+        "commerceguys/addressing": "^2.2.3",
+        "illuminate/contracts": "^11.0",
+        "moneyphp/money": "^4.6.0",
+        "spatie/laravel-data": "^4.11.1"
+    },
+    "require-dev": {
+        "basecodeoy/standards": "^1.0.5"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "BaseCodeOy\\Invoices\\": "src",
+            "BaseCodeOy\\Invoices\\Database\\Factories\\": "database/factories"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ergebnis/composer-normalize": true,
+            "infection/extension-installer": true,
+            "pestphp/pest-plugin": true,
+            "phpstan/extension-installer": true
+        },
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "aliases": {
+                "Invoices": "BaseCodeOy\\Invoices\\Facades\\Invoices"
+            },
+            "providers": [
+                "BaseCodeOy\\Invoices\\ServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": "@php ./vendor/bin/testbench package:discover --ansi",
+        "analyse": "vendor/bin/phpstan analyse",
+        "format": "vendor/bin/php-cs-fixer fix",
+        "test": "vendor/bin/pest",
+        "test-coverage": "vendor/bin/pest --coverage",
+        "test-snapshots": "vendor/bin/pest -d --update-snapshots"
+    }
+}
