@@ -17,7 +17,7 @@
     "homepage": "https://github.com/basecodeoy/laravel-invoices",
     "require": {
         "php": "^8.3",
-        "barryvdh/laravel-dompdf": "^2.2",
+        "barryvdh/laravel-dompdf": "^3.1",
         "basecodeoy/laravel-package-powerpack": "^1.0.0",
         "commerceguys/addressing": "^2.2.4",
         "illuminate/contracts": "^11.0",
